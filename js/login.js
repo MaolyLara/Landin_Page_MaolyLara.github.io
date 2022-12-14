@@ -5,7 +5,7 @@ function login(){
     email = document.getElementById('email').value;
     password = document.getElementById('senha').value;
 
-    if (user == 'teste' && email == 'test@gmail.com' && password == '12345'){
+    if (user == ' ' && email == ' ' && password == ' '){
         alert('início de sessão')
         window.location = "pag-principal.html";
     } else{
