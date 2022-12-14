@@ -4,7 +4,7 @@ function login(){
     var username = document.getElementById("usuario").value;
     var email = document.getElementById("email").value;
     var password = document.getElementById("senha").value;
-    if ( username == "nome" && email== "nome@gmail.com" && password == "123456"){
+    if ( username == "Maoly" && email== "Maoly@gmail.com" && password == "123456"){
         alert ("Login successfully");
         window.location = "pag-principal.html";
         return false;
