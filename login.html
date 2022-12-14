@@ -15,13 +15,20 @@
 <body>
     <div class="containerPrincipal">
         <h2 class="form">Início de Sessão e Registro</h2>
-        <div class="form-group" action="login.php" method="POST">
-            <input id="usuario" type="text" class="form-control" name="username" placeholder="Nome do Usuario">
-            <input id="email" type="email" class="form-control" name="username" placeholder="Digite seu email">
-            <input id="senha" type="password" class="form-control" name="username" placeholder="Digite uma Senha">
-            <br>
-            <button id="botao" class="botao" onclick="login()">Início de Sessão</button>
+        <div class="form-group">
+            <form id="form_id" method="post" name="myform">
+                <label for="">Nome</label>
+                <input id="usuario" type="text" class="form-control" name="username" placeholder="Nome do Usuario">          
+                <label for="">Email</label>
+                <input id="email" type="email" class="form-control" name="emailuser" placeholder="Digite seu email">
+                <label for="">senha</label>
+                <input id="senha" type="password" class="form-control" name="password" placeholder="Digite uma Senha">
+                <br>
+                <button id="botao" class="botao" onclick="login()">Início de Sessão</button>
+    
+            </form>
         </div>
+           
     </div>
 
     <script src="./js/login.js"></script>

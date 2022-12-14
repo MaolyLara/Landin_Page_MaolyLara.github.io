@@ -1,14 +1,24 @@
+var attempt = 3; // Variable to count number of attempts.
+// Below function Executes on click of login button.
 function login(){
-    var user, email, password
-
-    user = document.getElementById('usuario').value;
-    email = document.getElementById('email').value;
-    password = document.getElementById('senha').value;
-
-    if (user == ' ' && email == ' ' && password == ' '){
-        alert('início de sessão')
+    var username = document.getElementById("usuario").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("senha").value;
+    if ( username == "nome" && email== "nome@gmail.com" && password == "123456"){
+        alert ("Login successfully");
         window.location = "pag-principal.html";
+        return false;
     } else{
-        alert(' Usuario invalid')
+    
+    attempt --;// Decrementing by one.
+    alert("You have left "+attempt+" attempt;");
+    // Disabling fields after 3 attempts.
+    if( attempt == 0){
+        document.getElementById("usuario").disabled = true;
+        document.getElementById("email").disabled = true;
+        document.getElementById("password").disabled = true;
+        document.getElementById("botao").disabled = true;
+        return false;
+    }
     }
 }
