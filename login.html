@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/mao.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style-login.css">
+
+    <meta name="theme-color" content="#2091F9">
+
+    <title>PREDIC TO FINANCE, Login Usuario</title>
+</head>
+<body>
+    <div class="containerPrincipal">
+        <h2 class="form">Início de Sessão e Registro</h2>
+        <div class="form-group" action="login.php" method="POST">
+            <input id="usuario" type="text" class="form-control" name="username" placeholder="Nome do Usuario">
+            <input id="email" type="email" class="form-control" name="username" placeholder="Digite seu email">
+            <input id="senha" type="password" class="form-control" name="username" placeholder="Digite uma Senha">
+            <br>
+            <button id="botao" class="botao" onclick="login()">Início de Sessão</button>
+        </div>
+    </div>
+
+    <script src="./js/login.js"></script>
+    
+</body>
+</html>
